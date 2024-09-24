@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html 
+	lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+<link rel="stylesheet" href="/css/layout.css">
+
+		
+		<title> markdown基础语法 -  Hexo</title>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		
+<link rel="stylesheet" href="/lib/mdui/mdui.min.css">
+
+		
+<script src="/lib/mdui/mdui.min.js"></script>
+
+		<!-- lazyload -->
+		
+<script src="/lib/lazysizes.js"></script>
+
+		<!-- smooth-scrolling -->
+		
+<script src="/lib/smooth-scrolling.js"></script>
+
+		<!-- highlight -->
+		
+<link rel="stylesheet" href="/lib/highlight/atom-one-dark.min.css">
+
+		
+<script src="/lib/highlight/highlight.min.js"></script>
+
+		<!-- 预置 kiraicon -->
+		
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css">
+
+		
+		<link
+			rel="shortcut icon"
+			href="https://kira.host/assets/Pictures/Others/116359b4ccf19917.jpg"
+			type="image/png"
+		/>
+		
+<link rel="stylesheet" href="/deps/css/APlayer.min.css">
+
+		
+		
+<script src="/deps/js/APlayer.min.js"></script>
+<script src="/deps/js/Meting.min.js"></script>
+
+	<meta name="generator" content="Hexo 6.3.0"></head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('https://kira.host/assets/Pictures/Others/-f0d5cc34c6e5aa7_compressed.jpg')"
+		></div>
+		<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="Hexo">
+        <img
+			src="https://kira.host/assets/Pictures/Others/20220922230447.jpg"
+			alt="Shine Dawn"
+		/>
+    </a>
+</div>
+		<div class="kira-body">
+			<div class="kira-sidebar" id="sidebar">
+	<div class="kira-avatar mdui-ripple">
+		<a target="_blank" rel="noopener" href="https://kira.host/assets/Pictures/Others/20220922230447.jpg" title="Shine Dawn">
+			<img
+				src="https://kira.host/assets/Pictures/Others/20220922230447.jpg"
+				alt="Shine Dawn"
+			/>
+		</a>
+	</div>
+	<div class="kira-count">
+		<div><span>文章</span>3</div>
+		<div><span>标签</span>1</div>
+		<div><span>分类</span>1</div>
+	</div>
+	<div class="kira-list">
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/"
+			title="回到首页"
+		>
+			<i
+				class="kirafont
+					
+						icon-home
+					"
+			></i>
+			<div class="kira-list-item-content">
+				回到首页
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/archive.html"
+			title="文章归档"
+		>
+			<i
+				class="kirafont
+					
+						icon-container
+					"
+			></i>
+			<div class="kira-list-item-content">
+				文章归档
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/about.html"
+			title="关于本人"
+		>
+			<i
+				class="kirafont
+					
+						icon-user
+					"
+			></i>
+			<div class="kira-list-item-content">
+				关于本人
+			</div>
+		</a>
+		
+		<a
+			class="kira-list-item mdui-ripple false"
+			href="/friends.html"
+			title="我的朋友"
+		>
+			<i
+				class="kirafont
+					
+						icon-team
+					"
+			></i>
+			<div class="kira-list-item-content">
+				我的朋友
+			</div>
+		</a>
+		
+	</div>
+	<aside id="kira-sidebar">
+		
+			<div class="kira-widget-wrap">
+	<div class="kira-widget kira-social">
+		
+			<a
+				class="mdui-ripple"
+				href="https://ti.qq.com/open_qq/index2.html?url=mqqapi%3a%2f%2fuserprofile%2ffriend_profile_card%3fsrc_type%3dweb%26version%3d1.0%26source%3d2%26uin%3d752790033"
+				target="_blank"
+				mdui-tooltip="{content: 'QQ'}"
+				style="color: rgb(49, 174, 255); background-color: rgba(49, 174, 255, .1);"
+			>
+				<i
+					class="kirafont
+					
+						icon-QQ
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://space.bilibili.com/1767653524?spm_id_from=333.1007.0.0"
+				target="_blank"
+				mdui-tooltip="{content: '哔哩哔哩'}"
+				style="color: rgb(231, 106, 141); background-color: rgba(231, 106, 141, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-bilibili
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://github.com/xndawn"
+				target="_blank"
+				mdui-tooltip="{content: 'GitHub'}"
+				style="color: rgb(25, 23, 23); background-color: rgba(25, 23, 23, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-github
+					"
+				></i>
+			</a>
+		
+			<a
+				class="mdui-ripple"
+				href="https://gitee.com/xndawn"
+				target="_blank"
+				mdui-tooltip="{content: 'Gitee'}"
+				style="color: rgb(165, 15, 15); background-color: rgba(165, 15, 15, .15);"
+			>
+				<i
+					class="kirafont
+					
+						icon-gitee
+					"
+				></i>
+			</a>
+		
+	</div>
+</div>
+
+		
+			
+  <div class="kira-widget-wrap">
+    <h3 class="kira-widget-title">分类</h3>
+    <div class="kira-widget">
+      <ul class="category-list">
+        
+        
+
+        
+          <li class="category-list-item">
+            <a class="category-list-link" href="/categories/技能/">
+              技能
+            </a>
+            <span class="category-list-count">1</span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+		
+			
+	<div class="kira-widget-wrap">
+		<div id="randomtagcloud" class="kira-widget tagcloud kira-rainbow">
+			<a href="/tags/markdown/" style="font-size: 10px;">markdown</a>
+		</div>
+		
+	</div>
+
+
+		
+			
+	<div class="kira-widget-wrap">
+		<h3 class="kira-widget-title">
+			Archive
+		</h3>
+		<div class="kira-widget">
+			<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/">2024</a><span class="archive-list-count">3</span></li></ul>
+		</div>
+	</div>
+
+
+		
+	</aside>
+	<div class="kira-copyright">
+		&copy; 2024
+		<a href="/">Shine Dawn</a>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &
+		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
+		<br />
+		
+		
+	</div>
+</div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					
+<link rel="stylesheet" href="/css/kira-image.css">
+
+
+<script src="/js/kira-image.js"></script>
+
+<div class="kira-image">
+    <div class="kira-image-modal">
+        <div class="kira-image-header">
+            <div class="kira-image-counter"></div>
+            <div class="kira-image-title"></div>
+            <div class="kira-image-operation">
+                <div class="kira-image-operation-button" id="kira-image-operation-button-zoom">
+                    <i class="kirafont icon-zoom-in"></i>
+                </div>
+                <div class="kira-image-operation-button" id="kira-image-operation-button-close">
+                    <i class="kirafont icon-close"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kira-image-container">
+            <div class="kira-image-prev-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-left"></i>
+                </div>
+            </div>
+            <div class="kira-image-list">
+                <div class="kira-image-prev">
+                    <img />
+                </div>
+                <div class="kira-image-now">
+                    <img />
+                </div>
+                <div class="kira-image-next">
+                    <img />
+                </div>
+            </div>
+            <div class="kira-image-next-button-panel">
+                <div class="kira-image-exchange-button">
+                    <i class="kirafont icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+<link rel="stylesheet" href="/css/kira-code-copy.css">
+
+	
+<script src="/js/kira-code-copy.js"></script>
+
+
+<div class="kira-post">
+	<article>
+		
+		<div
+			class="kira-post-cover"
+			style="padding-bottom: '56.25%'"
+		>
+			<img
+				data-src="https://kira.host/assets/Pictures/Others/-f0d5cc34c6e5aa7_compressed.jpg"
+				data-sizes="auto"
+				alt="markdown基础语法"
+				class="lazyload kira-post-cover-image disabled-kira-image"
+			/>
+			<h1>markdown基础语法</h1>
+		</div>
+		
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i>2024年09月24日</a>
+			<a><i class="kirafont icon-edit-fill"></i>1k 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 4 分钟</a>
+		</div>
+		<h2><span id="标题">标题</span></h2><p><em><strong>在标题前面加 ‘#’，有几个 ‘#’就代表几级标题</strong></em><br><em><strong>注意‘#’后需要一个空格隔开再写标题</strong></em></p>
+<p> 1.一级标题</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext"># Heading level 1<br></code></pre></td></tr></table></figure>
+<h1><span id="heading-level-1">Heading level 1</span></h1><p>2.二级标题</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">## Heading level 2<br></code></pre></td></tr></table></figure>
+<h2><span id="heading-level-2">Heading level 2</span></h2><h2><span id="段落">段落</span></h2><p>创建段落，使用空白行将一行或多行文本进行分隔。</p>
+<p>Markdown 通常会忽略段落开头的空格。如果在段落开头添加两个空格，<br>渲染后可能会被视为无效.</p>
+<h2><span id="换行">换行</span></h2><p>在一行的末尾添加两个或多个空格，然后回车,即可创建一个换行(&lt; br &gt;)。  </p>
+<p>也可在行末尾使用&lt; br &gt;标签换行。</p>
+<h2><span id="强调">强调</span></h2><p>在需强调部分前后添加*符号</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>语法</th>
+<th>预览</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>斜体</td>
+<td><code>*斜体*</code></td>
+<td><em>斜体</em></td>
+</tr>
+<tr>
+<td>粗体</td>
+<td><code>**粗体**</code></td>
+<td><strong>粗体</strong></td>
+</tr>
+<tr>
+<td>粗斜体</td>
+<td><code>***粗斜体***</code></td>
+<td><em><strong>粗斜体</strong></em></td>
+</tr>
+</tbody></table>
+<h2><span id="引用">引用</span></h2><p>要创建块引用，在段落前添加一个 &gt; 符号。<br>块引用可以包含多个段落。为段落之间的空白行添加一个 &gt; 符号。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs angular2html">&gt; #### The quarterly results look great!<br>&gt;<br>&gt; - Revenue was off the chart.<br>&gt; - Profits were higher than ever.<br>&gt;<br>&gt;  *Everything* is going according to **plan**.<br></code></pre></td></tr></table></figure>
+<p>预览： </p>
+<blockquote>
+<h4><span id="the-quarterly-results-look-great">The quarterly results look great!</span></h4><ul>
+<li>Revenue was off the chart.</li>
+<li>Profits were higher than ever.</li>
+</ul>
+<p> <em>Everything</em> is going according to <strong>plan</strong>.</p>
+</blockquote>
+<h2><span id="列表">列表</span></h2><h3><span id="无序列表">无序列表</span></h3><p>在每个列表项前面添加破折号 (-)、星号 (*) 或加号 (+) 。<br>缩进一个或多个列表项可创建嵌套列表。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs angular2html">* First item<br>* Second item<br>* Third item<br>    * Indented item<br>    * Indented item<br>* Fourth item<br></code></pre></td></tr></table></figure>
+<p>预览：</p>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item<ul>
+<li>Indented item</li>
+<li>Indented item</li>
+</ul>
+</li>
+<li>Fourth item</li>
+</ul>
+<h3><span id="有序列表">有序列表</span></h3><p>在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，<br>但是列表应当以数字 1 起始。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs angular2html">1. First item<br>2. Second item<br>3. Third item<br>    1. Indented item<br>    2. Indented item<br>4. Fourth item<br></code></pre></td></tr></table></figure>
+<p>预览：</p>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item<ol>
+<li>Indented item</li>
+<li>Indented item</li>
+</ol>
+</li>
+<li>Fourth item</li>
+</ol>
+<h2><span id="代码块">代码块</span></h2><p>在代码块之前和之后的行上使用三个反引号（(&#96;&#96;&#96;）或三个波浪号（~~~）。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">```json //json 表示代码高亮<br>&#123;<br> &quot;firstName&quot;: &quot;John&quot;,<br> &quot;lastName&quot;: &quot;Smith&quot;,<br> &quot;age&quot;: 25<br>&#125;<br>```  <br></code></pre></td></tr></table></figure>
+<p>预览：</p>
+<figure class="highlight json"><figcaption><span>//json 表示代码高亮</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br> <span class="hljs-attr">&quot;firstName&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;John&quot;</span><span class="hljs-punctuation">,</span><br> <span class="hljs-attr">&quot;lastName&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Smith&quot;</span><span class="hljs-punctuation">,</span><br> <span class="hljs-attr">&quot;age&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">25</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+<h2><span id="分割线">分割线</span></h2><p>在单独一行上使用三个或多个星号 (***)、破折号 (—) 或<br>下划线 (___) ，并且不能包含其他内容。<br>为了兼容性，请在分隔线的前后均添加空白行。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">***<br><br>---<br><br>_________________<br></code></pre></td></tr></table></figure>
+<h3><span id="例子">例子</span></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Just<br><br>***<br><br>Go<br><br>---<br><br>For<br><br>_________________<br>It ！<br></code></pre></td></tr></table></figure>
+<h4><span id="预览">预览：</span></h4><p>Just</p>
+<hr>
+<p>Go</p>
+<hr>
+<p>For</p>
+<hr>
+<p>It ！</p>
+<h2><span id="链接">链接</span></h2><p>链接文本放在中括号内，链接地址放在后面的括号中  </p>
+<p>链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">手机加我[QQ](https://ti.qq &quot;Nice to mwwt you!&quot;) !<br></code></pre></td></tr></table></figure>
+<p>预览：<br>手机加我<a target="_blank" rel="noopener" href="https://ti.qq.com/open_qq/index2.html?url=mqqapi://userprofile/friend_profile_card?src_type=web&version=1.0&source=2&uin=752790033" title="Nice to mwwt you!">QQ</a> !</p>
+<h4><span id="网址和-email地址">网址和 Email地址：</span></h4><p>使用尖括号可以很方便地把URL或者email地址变成可点击的链接。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">&lt;https://shinedawn.top/&gt;  <br><br>&lt;shinedawn.su@gmail.com&gt;<br></code></pre></td></tr></table></figure>
+<p>预览：<br><a href="https://shinedawn.top/">https://shinedawn.top/</a>  </p>
+<p><a href="mailto:&#115;&#104;&#105;&#110;&#x65;&#x64;&#x61;&#119;&#x6e;&#x2e;&#115;&#x75;&#x40;&#x67;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;">&#115;&#104;&#105;&#110;&#x65;&#x64;&#x61;&#119;&#x6e;&#x2e;&#115;&#x75;&#x40;&#x67;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<h4><span id="强调链接">强调链接：</span></h4><p>在链接语法前后增加星号。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">I love my school *[浙江师范大学](https://www.zjnu.edu.cn/)！*.  <br>I love my school **[浙江师范大学](https://www.zjnu.edu.cn/)！**.    <br>I love my school ***[浙江师范大学](https://www.zjnu.edu.cn/)！***.<br></code></pre></td></tr></table></figure>
+<p>预览：<br>I love my school <em><a target="_blank" rel="noopener" href="https://www.zjnu.edu.cn/">浙江师范大学</a>！</em>.<br>I love my school <strong><a target="_blank" rel="noopener" href="https://www.zjnu.edu.cn/">浙江师范大学</a>！</strong>.<br>I love my school <em><strong><a target="_blank" rel="noopener" href="https://www.zjnu.edu.cn/">浙江师范大学</a>！</strong></em>.</p>
+<h2><span id="图片">图片</span></h2><p>要添加图像，请使用感叹号 ‘ ! ’, 然后在方括号增加替代文本，<br>图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。<br><em><strong>注意括号都要用英文括号</strong></em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angular2html">![这是我的母校](https://www.zjnu.edu.cn/_upload/article/images/c1/6e/af7b994043ba90f9943ccb0abab2/b06d8dd7-7e28-4c7d-bbea-e836bb4879a7.jpg &quot;浙江师范大学&quot;)<br></code></pre></td></tr></table></figure>
+<p>预览：<br><img data-fancybox="gallery" data-sizes="auto" data-src="https://www.zjnu.edu.cn/_upload/article/images/c1/6e/af7b994043ba90f9943ccb0abab2/b06d8dd7-7e28-4c7d-bbea-e836bb4879a7.jpg" alt="这是我的母校" class="lazyload"></p>
+<h4><span id="给图片加链接">给图片加链接</span></h4><p>将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。  </p>
+<p><a target="_blank" rel="noopener" href="https://www.zjnu.edu.cn/6982/list.htm"><img data-fancybox="gallery" data-sizes="auto" data-src="https://www.zjnu.edu.cn/_upload/article/images/ba/80/a87c49be437aa154b07f8419664b/02ff728f-5bd8-46fc-a012-bde78a613509_s.jpg" alt="初阳湖" class="lazyload"></a></p>
+<h2><span id="转义字符">转义字符</span></h2><p>在字符前面添加反斜杠字符 \  ，显示原本用于格式化 Markdown 文档的字符</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angular2html">\* Without the backslash, this would be a bullet in an unordered list.<br></code></pre></td></tr></table></figure>
+<p>预览：  </p>
+<p>* Without the backslash, this would be a bullet in an unordered list.</p>
+
+	</article>
+
+	 
+    <div class="kira-post-copyright">
+        <strong>Author：</strong>Shine Dawn<br>
+        <strong>Link：</strong><a href="https://shinedawn.top/2024/09/24/markdown/" title="https:&#x2F;&#x2F;shinedawn.top&#x2F;2024&#x2F;09&#x2F;24&#x2F;markdown&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;shinedawn.top&#x2F;2024&#x2F;09&#x2F;24&#x2F;markdown&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+  
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			  
+			<!-- 先找到与当前文字相同的目录 -->
+			   
+			<!-- 在找到当前文章所在的 index -->
+			          
+		</nav>
+	</div>
+	
+	<div class="kira-post-meta kira-rainbow">
+		
+			<a class="kirafont icon-container-fill -link" href="/categories/%E6%8A%80%E8%83%BD/">技能</a>
+		
+		
+			<a class="kirafont icon-tag-fill -none-link" href="/tags/markdown/" rel="tag">markdown</a>
+		
+	</div>
+	
+	<div class="kira-post-footer">
+		
+
+		
+	<div class="giscus"></div>
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="xndawn/blog-discuss"
+      data-repo-id="828568440"
+      data-category="Announcements"
+      data-category-id="-giscus category id-"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  
+
+	</div>
+	
+</div>
+
+				</div>
+			</div>
+			<div class="kira-right-column">
+	<a onclick="document.querySelector('#kira-top-header').scrollIntoView({behavior: 'smooth'});" class="kira-backtotop" aria-label="回到顶部" title="回到顶部">
+		<button class="mdui-fab mdui-ripple">
+			<i class="kirafont icon-caret-up"></i>
+		</button>
+	</a>
+</div>
+
+		</div>
+	</body>
+</html>
